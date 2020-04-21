@@ -25,6 +25,25 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "/black-sea-in-history" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
+collections:
+  cities:
+    output: true
+  contributors:
+    output: true
+
+defaults:
+  - scope:
+      path: ""
+      type: cities
+    values:
+      layout: city
+  - scope:
+      path: ""
+      type: contributors
+    values:
+      layout: contributor
+
+
 # Build settings
 plugins:
   - jekyll-feed
