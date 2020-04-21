@@ -26,9 +26,10 @@ baseurl: "/black-sea-in-history" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
-theme: just-the-docs
 plugins:
   - jekyll-feed
+  - jekyll-postcss
+  - jekyll-purgecss
 
 # Exclude from processing.
 # The following items will not be processed, by default.

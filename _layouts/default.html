@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body>
+    <header class="p-4 w-screen bg-gray-100">
+      <a class="text-3xl" href="{{ site.baseurl }}/" title="Home">{{ site.title | newline_to_br }}</a>
+      <br><small>{{ site.description }}</small>
+    </header>
+
+    <main class="w-screen grid grid-cols-3">
+      <article class="col-span-2 bg-gray-200">
+      {{ content }}
+      </article>
+      <aside class="col-span-1 bg-gray-500">
+        Sidebar
+      </aside>
+    </main>
+
+    <footer class="p-4 w-screen bg-gray-100">
+      &copy; 2020 footer
+    </footer>
+  </body>
+</html>
