@@ -1,0 +1,17 @@
+<aside class="p-4 col-span-1 bg-gray-500">
+  <h3 class="text-xl">Cities</h3>
+  <ul class="list-disc list-inside">
+    {% for city in site.cities %}
+      <li><a href="{{ city.url | prepend: site.baseurl }}">{{city.name}}</a></li>
+    {% endfor %}
+  </ul>
+
+  <h3 class="text-xl">Contributors</h3>
+  <ul class="list-disc list-inside">
+    {% for contributor in site.contributors %}
+      <li><a href="{{ contributor.url | prepend: site.baseurl }}">{{contributor.name}}</a></li>
+    {% endfor %}
+  </ul>
+
+</aside>
+
