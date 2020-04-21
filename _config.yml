@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Black Sea in History
+title: "The Black Sea in History: A Virtual Textbook"
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
   This is the description of the Black Sea in History page.
@@ -26,12 +26,32 @@ baseurl: "/black-sea-in-history" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 collections:
+  chapters:
+    output: true
+    order:
+      - inspiration.md
+      - ecology-and-geography.md
+      - intersecting-civilizations.md
+      - byzantines-slavs-italians.md
+      - conquests.md
+      - administrative-strategies.md
+      - imperial-rivalries.md
+      - north-shore.md
+      - cities.md
+      - ottoman-decolonization.md
+      - caucasus-wars.md
+      - new-nations-and-oil-pipelines.md
   cities:
     output: true
   contributors:
     output: true
 
 defaults:
+  - scope:
+      path: ""
+      type: chapters
+    values:
+      layout: chapter
   - scope:
       path: ""
       type: cities

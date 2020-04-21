@@ -1,8 +1,8 @@
 <aside class="p-4 col-span-1 bg-gray-500">
-  <h3 class="text-xl">Cities</h3>
+  <h3 class="text-xl">Table of Contents</h3>
   <ul class="list-disc list-inside">
-    {% for city in site.cities %}
-      <li><a href="{{ city.url | prepend: site.baseurl }}">{{city.name}}</a></li>
+    {% for chapter in site.chapters %}
+      <li><a href="{{ chapter.url | prepend: site.baseurl }}">{{chapter.title}}</a></li>
     {% endfor %}
   </ul>
 
