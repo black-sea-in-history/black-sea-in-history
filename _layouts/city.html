@@ -4,4 +4,6 @@ layout: default
 
 <h2 class="text-2xl">{{page.name}}</h2>
 
+<h3>Authors: {{page.authors | array_to_sentence_string}}</h3>
+
 {{ content }}

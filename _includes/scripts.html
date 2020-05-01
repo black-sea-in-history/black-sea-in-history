@@ -1,0 +1,25 @@
+<script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+<script>
+    const map = L.map("map").setView(
+        [44, 35], 6);
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+	maxZoom: 19,
+	attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+}).addTo(map);
+</script>
+<script>
+    const cities = [];
+    {% for city in site.cities %}
+    cities.push({
+        name: "{{city.name}}",
+        latitude: {{city.latitude}},
+        longitude: {{city.longitude}},
+        url: "{{ city.url | prepend: site.baseurl }}"
+    });
+    {% endfor %}
+    for(const city of cities){
+        L.marker([city.latitude, city.longitude])
+            .bindPopup(`<a href="${city.url}">${city.name}</a>`)
+            .addTo(map);
+    }
+</script>>

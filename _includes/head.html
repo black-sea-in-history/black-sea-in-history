@@ -9,4 +9,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta charset="utf-8">
   <link rel="stylesheet" href="{{ site.baseurl }}/css/site.css">
+  {% if page.leaflet %}
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  {% endif %}
 </head>
