@@ -11,4 +11,4 @@ authors:
 
 Odessa is a city on the Black Sea.
 
-It is in contemporary Ukraine.
+It is in contemporary Ukraine. It was founded in the 18th century.
