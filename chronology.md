@@ -3,8 +3,18 @@ layout: default
 title: Chronology
 ---
 
-The Chronology
-BLACK SEA CHRONOLOGY (TO 1453)
+<h2 class="text-4xl">Chronology (to 1453)</h2>
+
+<ul class="list-disc list-inside">
+{% for event in site.events %}
+	{% if event.year < 0 %}
+		{% assign year = event.year | times: -1 | append: " BCE" %}
+	{% else %}
+	 {% assign year = event.year | append: " CE" %}
+	{% endif %}
+	<li>{{ year }}: {{event.description}}</li>
+{% endfor %}
+</ul>
 
 861 BC: Kingdom of Urartu founded
 513 BC: Darius’ campaign against the Scythians 
@@ -57,46 +67,3 @@ C. 860: Cyrillic alphabet developed by Saint Constantine the Philosopher (St Cyr
 1556: Astrakhan is conquered by Ivan IV
 1566: Suleiman the Magnificent dies
 
-Timeline of Ottoman Losses in the Balkans and Caucasus, Told through Treaties
-
-1821-1829
-    Greek War of Independence
-1826
-    Akkerman Convention
-   	 Serbia granted autonomy within Ottoman Empire
-   	 Ottomans withdraw military from Danubian Principalities
-1829
-    Treaty of Adrianople between Russia and Ottomans
-   	 Russia gains control of Georgian territory and the Danubian delta
-   	 Greek autonomy accepted by the Ottomans
-   	 Border between Ottoman Empire and Wallachia established at the Danube
-   	 Straits are opened to all commercial vessels
-1832
-    Treaty of Constantinople
-   	 Britain, France and Russia establish independent Greek Kingdom
-1841
-    London Straits Convention
-   	 All warships blocked from passing through the straits, benefiting British naval    				 power in the Mediterranean
-1853-1856
-    Crimean War (everyone against the Russians in order to prop up Ottomans)
-1856
-    Treaty of Paris
-   	 End of Crimean War, Russian Black Sea power reduced
-   	 Russia forced to remove military from Danubian Principalities
-1877-1878
-    Russo-Turkish War, Russia quickly reaches the outskirts of Istanbul, forcing Ottomans to    			 sign the
-   	 Treaty of San Stefano (1878)
-   		 which, among other things, establishes large independent Bulgaria    					 composed of modern-day Bulgaria and large parts of Thrace, most of    				 geographic Macedonia, and parts of modern-day Serbia
-   	 Treaty of Berlin (1878)
-   		 -Romania, Montenegro, Serbia acknowledged as de facto independent
-   		 -Romania gains Dobruja
-   		 -Serbia gains lands around Niš and Leskovac
-   		 -Most of enlarged Bulgaria returned to the Ottomans, northern slice    				 gains independence, southern half, Eastern Rumelia, autonomous part of    				 Ottoman Empire
-   		 -Russian gains in Caucasus and Eastern Anatolia (Kars, Batumi, Ardahan)    				 confirmed
-   		 -Austria-Hungary allowed to garrison troops in Bosnian
-1885
-    Principality of Bulgaria and Eastern Rumelia unite
-1908
-    Young Turk Revolution
-   	 Bosnia annexed by Austria-Hungary
-   	 Bulgaria declares full independence
