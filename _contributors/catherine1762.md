@@ -1,7 +1,7 @@
 ---
 name: Catherine Evtuhov
 uni: ce2308
-headshot-url: 
+headshot-url: https://imgur.com/4GxCWjW
 ---
 
 
