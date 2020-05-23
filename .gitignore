@@ -1,6 +1,9 @@
+.DS_Store
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.yarn/cache
+yarn-error.log
 vendor
 node_modules

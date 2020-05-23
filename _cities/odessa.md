@@ -9,6 +9,9 @@ authors:
 
 ![Odessa panorama from Wikipedia](https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Odessa_panorama.jpg/1158px-Odessa_panorama.jpg)
 
-Odessa is a city on the Black Sea.
+Odessa[^cyrillic-name] is a city on the [Black Sea](https://en.wikipedia.org/wiki/Black_Sea).
 
-It is in contemporary Ukraine. It was founded in the 18th century.
+
+It is in contemporary _Ukraine_.
+
+[^cyrillic-name]: The name of the city in Cyrillic is "Одеса."
