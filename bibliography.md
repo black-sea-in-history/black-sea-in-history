@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page-with-sidebar
 title: Bibliography
 ---
 
