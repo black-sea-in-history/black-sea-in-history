@@ -2,7 +2,7 @@
 title: "Inspiration: The Mediterranean"
 ---
 
-Our inspiration is the Mediterranean.
+Our inspiration is the [Mediterranean].
 
 
 
