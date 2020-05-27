@@ -5,4 +5,4 @@ headshot-url: https://imgur.com/4GxCWjW
 ---
 
 
-Catherine is a professor in the History Department at Columbia University (https://history.columbia.edu/faculty/evtuhov-catherine/)
+Catherine is a professor in the [History Department at Columbia University](https://history.columbia.edu/faculty/evtuhov-catherine/)
