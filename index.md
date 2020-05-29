@@ -2,6 +2,6 @@
 layout: home
 ---
 
-<h2 class="text-4xl">**THE BLACK SEA IN HISTORY**</h2>
+<h2 class="text-4xl">THE BLACK SEA IN HISTORY</h2>
 
-_**A Virtual Textbook**_
+_A Virtual Textbook_
