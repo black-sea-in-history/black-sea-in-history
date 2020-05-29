@@ -8,9 +8,9 @@ title: Chronology
 <ul class="list-disc list-inside">
 {% for event in site.events %}
 	{% if event.year < 0 %}
-		{% assign year = event.year | times: -1 | append: " BCE" %}
+		{% assign year = event.year | times: -1 | append: " BC" %}
 	{% else %}
-	 {% assign year = event.year | append: " CE" %}
+	 {% assign year = event.year | append: " " %}
 	{% endif %}
 	<li>{{ year }}: {{event.description}}</li>
 {% endfor %}
